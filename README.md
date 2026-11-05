@@ -1,3 +1,5 @@
+## Methods used
+
 | Object/function |                     Methods used                         |                     Purpose                        |
 | --- | --- |
 |     `Date`      | `new Date()`, `getMonth()`, `getDate()`, `getFullYear()` | Get the current date and its month, day, and year. |
