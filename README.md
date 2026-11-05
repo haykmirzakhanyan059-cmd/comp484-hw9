@@ -1,4 +1,5 @@
 | Object/function |                     Methods used                         |                     Purpose                        |
+| --- | --- |
 |     `Date`      | `new Date()`, `getMonth()`, `getDate()`, `getFullYear()` | Get the current date and its month, day, and year. |
 |     `Math`      |             `Math.random()`, `Math.floor()`              | Generate random values and round selected values down to integers. |
 |    `String`     |                        `String()`                        | Convert generated numbers into strings. |
