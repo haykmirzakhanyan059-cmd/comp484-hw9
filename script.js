@@ -17,10 +17,10 @@ if (day < 10) {
     day = "0" + day;
 }
 
-var message1 = "Today is " + month + "/" + day + "/" + year;
+var dateMessage = "Today is " + month + "/" + day + "/" + year;
 
 // Display the message in the HTML paragraph
-document.getElementById("dateOutput").textContent = message1;
+document.getElementById("dateOutput").textContent = dateMessage;
 
 // ==========================
 // Part 2: Number Conversion
@@ -35,14 +35,14 @@ var decimalString = (Math.random() * 100).toFixed(2);// the toFixed() method for
 
 var nonNumericString = "apple"; //create a non-numeric string variable
 
-var a ="Original: '" + numericString1 + "' -> Converted: " + Number(numericString1) + " -> isNaN: " + Number.isNaN(Number(numericString1)) + " -> isInteger: " + Number.isInteger(Number(numericString1)) + "\n";
-var b = "Original: '" + numericString2 + "' -> Converted: " + Number(numericString2) + " -> isNaN: " + Number.isNaN(Number(numericString2)) + " -> isInteger: " + Number.isInteger(Number(numericString2)) + "\n";
-var c = "Original: '" + decimalString + "' -> Converted: " + Number(decimalString) + " -> isNaN: " + Number.isNaN(Number(decimalString)) + " -> isInteger: " + Number.isInteger(Number(decimalString)) + "\n";
-var d = "Original: '" + nonNumericString + "' -> Converted: " + Number(nonNumericString) + " -> isNaN: " + Number.isNaN(Number(nonNumericString)) + " -> isInteger: " + Number.isInteger(Number(nonNumericString));
+var firstNumericResult ="Original: '" + numericString1 + "' -> Converted: " + Number(numericString1) + " -> isNaN: " + Number.isNaN(Number(numericString1)) + " -> isInteger: " + Number.isInteger(Number(numericString1)) + "\n";
+var secondNumericResult = "Original: '" + numericString2 + "' -> Converted: " + Number(numericString2) + " -> isNaN: " + Number.isNaN(Number(numericString2)) + " -> isInteger: " + Number.isInteger(Number(numericString2)) + "\n";
+var decimalResult = "Original: '" + decimalString + "' -> Converted: " + Number(decimalString) + " -> isNaN: " + Number.isNaN(Number(decimalString)) + " -> isInteger: " + Number.isInteger(Number(decimalString)) + "\n";
+var nonNumericResult = "Original: '" + nonNumericString + "' -> Converted: " + Number(nonNumericString) + " -> isNaN: " + Number.isNaN(Number(nonNumericString)) + " -> isInteger: " + Number.isInteger(Number(nonNumericString));
 
-var message2 = a + b + c + d;
+var conversionMessage = firstNumericResult + secondNumericResult + decimalResult + nonNumericResult;
 
-document.getElementById("numberConversionOutput").textContent = message2;
+document.getElementById("numberConversionOutput").textContent = conversionMessage;
 
 // ==========================
 // Part 3: Math & Formatting
@@ -52,12 +52,12 @@ var num1 = Math.floor(Math.random() * 1000);
 var num2 = Math.random() * 1000;// getting this var as a possible floating point number between 0 and 1000, not an integer
 var num3 = Math.random() * 1000;
 
-var x = num1 + num2; // addition
-var y = num3 * 2; // multiplication
+var additionResult = num1 + num2; // addition
+var multiplicationResult = num3 * 2; // multiplication
 
-var message3 = "num1: " + num1 + "\nnum2: " + num2.toFixed(2) + "\nnum3: " + num3.toFixed(2) + "\n\nAddition (num1 + num2): " + x.toLocaleString() + "\nMultiplication (num3 * 2): " + y.toLocaleString();
+var mathMessage = "num1: " + num1 + "\nnum2: " + num2.toFixed(2) + "\nnum3: " + num3.toFixed(2) + "\n\nAddition (num1 + num2): " + additionResult.toLocaleString() + "\nMultiplication (num3 * 2): " + multiplicationResult.toLocaleString();
 
-document.getElementById("mathOutput").textContent = message3;
+document.getElementById("mathOutput").textContent = mathMessage;
 
 // ==========================
 // Part 4: Conditionals
@@ -75,7 +75,7 @@ if (Number.isInteger(Number(decimalString))) {
     document.getElementById("conditionalOutput").textContent += "The value '" + decimalString + "' is not an integer.\n";
 }
 
-if (x > 1000) {
+if (additionResult > 1000) {
     document.getElementById("conditionalOutput").textContent += "The result of addition (num1 + num2) is greater than 1000.\n";
 } else {
     document.getElementById("conditionalOutput").textContent += "The result of addition (num1 + num2) is not greater than 1000.\n";
