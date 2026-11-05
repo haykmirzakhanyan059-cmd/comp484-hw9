@@ -9,6 +9,8 @@
 | Number instances|              `toFixed()`, `toLocaleString()`             | Format numbers as strings for display. |
 
 
+Link to git pages: https://haykmirzakhanyan059-cmd.github.io/comp484-hw9/
+
 Screenshot path: ![](HW9-screenshot.png)
 
 Reflection: The easiest I would say was doing the addition or multiplication parts. The hardest probably was making the results show up 
